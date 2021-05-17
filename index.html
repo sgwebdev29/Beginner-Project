@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Beginner Project</title>
+</head>
+
+<body>
+    <a href="#home" class="backtotop"><i class="fas fa-arrow-up"></i></a>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#testimony">Testimony</a></li>
+            
+        </ul>
+        <i class="fas fa-bars fa-2x"></i>
+    </nav>
+    <section class="hero">
+        <header>
+            <div class="header-content">
+                <h1>Beginner's Project</h1>
+                <h1>Simple, Elegant & Easy To Learn</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus architecto doloremque sit sed
+                    commodi
+                    Delectus architecto doloremque sit sed commodi dolorum harum deleniti, assumenda est labore. Ratione
+                    vero itaque deserunt fuga.</p>
+                <a href="#" class="btn">Learn Web Dev</a>
+            </div>
+        </header>
+    </section>
+    <section class="section2 p-100" id="about">
+        <header>
+            <h2>What you will learn from this simple front end website</h2>
+            <p>Lorem ipsum dolor, sit amet sit amet consectetur adipisicing elit. Architecto, magni. consectetur <br>
+                adipisicing elit. Architecto, magni.</p>
+        </header>
+        <div class="section2-content">
+            <div class="row">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-atlas fa-3x"></i>
+                    </div>
+                    <h3>Web Dev</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia quod laborum amet
+                        quas quia!</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-award fa-3x"></i>
+                    </div>
+                    <h3>Certified</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia quod laborum amet
+                        quas quia!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-beer fa-3x"></i>
+                    </div>
+                    <h3>Enjoy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia quod laborum amet
+                        quas quia!</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-file-code fa-3x"></i>
+                    </div>
+                    <h3>Code</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia quod laborum amet
+                        quas quia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3 p-100" id="feature">
+        <div class="row">
+            <div class="box">
+                <div class="icon">
+                    <i class="fab fa-adn fa-3x"></i>
+                </div>
+                <h3>Store</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehd laborum amet
+                    quas quia!</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fab fa-apple fa-3x"></i>
+                </div>
+                <h3>Apple</h3>
+                <p>Lorem ipsum dolor sit amet consing elit. Reprehenderit officia quod laborum amet
+                    quas quia!</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                </div>
+                <h3>Mobile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ofaborum amet
+                    quas quia!</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fab fa-android fa-3x"></i>
+                </div>
+                <h3>Android</h3>
+                <p>Lorem ipsum dolorctetur adipisicing elit. Reprehenderit officia quod laborum amet
+                    quas quia!</p>
+            </div>
+        </div>
+    </section>
+    <section class="section4 p-100" id="testimony">
+        <div class="section4-content">
+            <div class="icon">
+                <i class="fas fa-user-friends fa-3x"></i>
+            </div>
+            <div class="testimony">
+                <i class="fas fa-quote-left fa-4x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nulla deleniti soluta repudiandae
+                    minima, enim natus error, recusandae dicta tempore rerum ipsa ducimus reiciendis aliquam?</p>
+                <h3>John Doe</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""> <i class="fab fa-youtube"></i></a>
+        </div>
+        <p>Made using only HTML and CSS &copy; sgwebdev.com</p>
+    </footer>
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click',()=> {
+            document.querySelector('nav ul').classList.toggle('showmenu');
+            document.querySelector('.fa-bars').classList.toggle('fa-times');
+
+        });
+        document.querySelector('.backtotop').addEventListener('click',()=>{
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
+</body>
+
+</html>
